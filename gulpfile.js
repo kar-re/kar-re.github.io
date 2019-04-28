@@ -205,7 +205,7 @@ var deploy      = require('gulp-gh-pages');
  */
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
-    .pipe(deploy({ branch: "master", force: true }))
+    .pipe(deploy({ branch: "master1" }))
 });
 
 // build and default tasks
