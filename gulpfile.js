@@ -198,6 +198,16 @@ gulp.task('watch', () => {
   gulp.watch('src/images/**/*.{gif,jpg,png,svg}', ['images', reload])
 })
 
+var deploy      = require('gulp-gh-pages');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy({ branch: "gh-pages" }))
+});
+
 // build and default tasks
 
 gulp.task('build', ['clean'], () => {
@@ -210,3 +220,4 @@ gulp.task('build', ['clean'], () => {
 })
 
 gulp.task('default', ['build', 'server', 'watch'])
+
