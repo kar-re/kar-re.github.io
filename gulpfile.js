@@ -21,6 +21,7 @@ const filesize = require('rollup-plugin-filesize')
 const resolve  = require('rollup-plugin-node-resolve')
 const uglify   = require('rollup-plugin-uglify')
 const rucksack = require('rucksack-css')
+const ghPages   = require('gulp-gh-pages');
 
 // error handler
 
