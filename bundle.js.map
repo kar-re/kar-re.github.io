@@ -1,1 +1,1 @@
-{"version":3,"file":"bundle.js","sources":["../src/js/main.js"],"sourcesContent":["const main = () => {\n\n}\n\ndocument.addEventListener('DOMContentLoaded', main)\n"],"names":["document","addEventListener"],"mappings":"yBAIAA,SAASC,iBAAiB,mBAJb"}
+{"version":3,"file":"bundle.js","sources":["../src/js/main.js"],"sourcesContent":["const main = () => {\r\n\r\n}\r\n\r\ndocument.addEventListener('DOMContentLoaded', main)\r\n"],"names":["document","addEventListener"],"mappings":"yBAIAA,SAASC,iBAAiB,mBAJb"}
