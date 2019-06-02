@@ -9,10 +9,21 @@
   }
 }
 .bio {
-  width: 100%;
+  margin: auto;
+  max-width: 640px;
+  font-size: 2.8rem;
+  letter-spacing: -0.5px;
+
   @include min($tablet) {
     width: 55%;
   }
+}
+.bio .secondary_header {
+  margin-bottom: 1em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 .container .spacer {
   border-top: 10px;
@@ -23,6 +34,19 @@
 
   @include min($tablet) {
     padding: 0em 0 8em;
+  }
+}
+
+.bio_text {
+  line-height: 1.7;
+  font-size: 1.8rem;
+
+  @include min($tablet) {
+    font-size: 2.2rem;
+  }
+
+  a {
+    color: $primary-text;
   }
 }
 
@@ -49,6 +73,10 @@ hr {
     line-height: 68px;
     font-size: $h1-font-size;
   }
+}
+.hero__title a {
+  color:$dark-grey;
+  text-decoration: underline;
 }
 
 .hero__link {
