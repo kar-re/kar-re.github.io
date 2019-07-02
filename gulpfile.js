@@ -148,7 +148,11 @@ const others = [
     name: 'favicon',
     src:  '/favicon.ico',
     dest: ''
-  }
+  },{
+    name: 'CNAME',
+    src:  '/CNAME',
+    dest: ''
+  },
 ]
 
 others.forEach(object => {
@@ -217,7 +221,7 @@ gulp.task('build', ['clean'], () => {
   fs.mkdirSync('dist/maps')
 
   // run the tasks
-  gulp.start('html', 'sass', 'js', 'images', 'fonts', 'videos', 'favicon')
+  gulp.start('html', 'sass', 'js', 'images', 'fonts', 'videos', 'favicon', 'CNAME')
 })
 
 gulp.task('default', ['build', 'server', 'watch'])

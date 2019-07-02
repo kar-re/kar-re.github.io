@@ -73,6 +73,12 @@ hr {
     line-height: 68px;
     font-size: $h1-font-size;
   }
+  @include min($desktop) {
+    max-width: 1200px;
+  }
+  @include min($large) {
+    max-width: 840px;
+  }
 }
 .hero__title a {
   color:$dark-grey;
